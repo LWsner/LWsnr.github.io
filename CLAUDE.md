@@ -29,6 +29,7 @@ hugo
 ### Content Creation
 ```bash
 # Create new content using archetypes
+hugo new about/entry-title.md
 hugo new blog/post-title.md
 hugo new research/paper-title.md
 hugo new news/announcement.md
@@ -48,6 +49,7 @@ hugo new hobbies/hobby-name.md
 
 ### Content Types
 Each content section has its own archetype with specific front matter:
+- **About**: Education & career timeline entries with position, organization, location, date range, and type (education/career)
 - **Research**: Academic papers with abstracts, authors, publication details
 - **Blog**: Standard blog posts with tags and categories
 - **News**: Brief announcements and updates

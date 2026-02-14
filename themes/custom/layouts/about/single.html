@@ -1,0 +1,58 @@
+{{ define "main" }}
+<div class="container">
+    <article class="about-single">
+        <header class="about-header">
+            <h1>{{ .Params.position | default .Title }}</h1>
+            <div class="about-meta">
+                <div class="about-organization">
+                    <strong>Organization:</strong> {{ .Params.organization }}
+                </div>
+                {{ if .Params.location }}
+                <div class="about-location">
+                    <strong>Location:</strong> {{ .Params.location }}
+                </div>
+                {{ end }}
+                <div class="about-dates">
+                    <strong>Period:</strong> {{ .Params.start_date }}{{ if .Params.end_date }} – {{ .Params.end_date }}{{ else }} – present{{ end }}
+                </div>
+                <div class="about-type">
+                    <span class="about-type-tag {{ .Params.type_label | default "career" }}">
+                        {{ .Params.type_label | default "career" }}
+                    </span>
+                </div>
+            </div>
+        </header>
+
+        {{ if .Params.description }}
+        <section class="about-summary">
+            <p>{{ .Params.description }}</p>
+        </section>
+        {{ end }}
+
+        <div class="about-content">
+            {{ .Content }}
+        </div>
+
+        <footer class="about-footer">
+            {{ if or .Prev .Next }}
+            <nav class="about-nav">
+                {{ if .Prev }}
+                <a href="{{ .Prev.Permalink }}" class="nav-prev">
+                    ← {{ .Prev.Params.position | default .Prev.Title }}
+                </a>
+                {{ end }}
+                {{ if .Next }}
+                <a href="{{ .Next.Permalink }}" class="nav-next">
+                    {{ .Next.Params.position | default .Next.Title }} →
+                </a>
+                {{ end }}
+            </nav>
+            {{ end }}
+
+            <div class="back-to-list">
+                <a href="/about/">← Back to about</a>
+            </div>
+        </footer>
+    </article>
+</div>
+{{ end }}

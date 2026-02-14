@@ -28,9 +28,14 @@ theme = 'custom'
   weight = 2
 
 [[menu.main]]
+  name = 'About'
+  url = '/about/'
+  weight = 3
+
+[[menu.main]]
   name = 'Research'
   url = '/research/'
-  weight = 3
+  weight = 4
 
 [[menu.main]]
   name = 'Hobbies'

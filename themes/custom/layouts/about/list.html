@@ -1,0 +1,43 @@
+{{ define "main" }}
+<div class="container">
+    <header class="section-header">
+        <h1>{{ .Title }}</h1>
+        {{ if .Content }}
+        <div class="section-description">
+            {{ .Content }}
+        </div>
+        {{ end }}
+    </header>
+
+    <div class="about-list">
+        {{ range sort .Pages ".Params.start_date" "desc" }}
+        <article class="about-item {{ .Params.type_label | default "career" }}">
+            <div class="about-marker">
+                <span class="about-dot"></span>
+            </div>
+            <div class="about-card">
+                <div class="about-date-badge">
+                    {{ .Params.start_date }}{{ if .Params.end_date }} – {{ .Params.end_date }}{{ else }} – present{{ end }}
+                </div>
+                <span class="about-type-tag {{ .Params.type_label | default "career" }}">
+                    {{ .Params.type_label | default "career" }}
+                </span>
+                <h2 class="about-position">{{ .Params.position | default .Title }}</h2>
+                <h3 class="about-organization">{{ .Params.organization }}</h3>
+                {{ if .Params.location }}
+                <div class="about-location">{{ .Params.location }}</div>
+                {{ end }}
+                {{ if .Params.description }}
+                <p class="about-description">{{ .Params.description }}</p>
+                {{ end }}
+                {{ if .Content }}
+                <div class="about-content">{{ .Content }}</div>
+                {{ end }}
+            </div>
+        </article>
+        {{ else }}
+        <p class="no-content">No entries yet.</p>
+        {{ end }}
+    </div>
+</div>
+{{ end }}
