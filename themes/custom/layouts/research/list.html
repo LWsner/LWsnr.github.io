@@ -46,7 +46,7 @@
                     </button>
                     {{ end }}
                     {{ if .Params.paper_url }}
-                    <a href="{{ .Params.paper_url }}" target="_blank" rel="noopener" class="btn btn-primary">View Paper</a>
+                    <a href="{{ .Params.paper_url }}" target="_blank" rel="noopener" class="btn btn-primary">{{ .Params.paper_label | default "View Paper" }}</a>
                     {{ end }}
                 </div>
             </div>

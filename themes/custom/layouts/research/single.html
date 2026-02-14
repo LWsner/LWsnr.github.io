@@ -19,7 +19,7 @@
                 </div>
                 {{ if .Params.paper_url }}
                 <div class="research-links">
-                    <a href="{{ .Params.paper_url }}" target="_blank" rel="noopener" class="paper-link">View Full Paper →</a>
+                    <a href="{{ .Params.paper_url }}" target="_blank" rel="noopener" class="paper-link">{{ .Params.paper_label | default "View Full Paper" }} →</a>
                 </div>
                 {{ end }}
             </div>

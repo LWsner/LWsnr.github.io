@@ -11,6 +11,7 @@ publication_year = 2025
 paper_url = 'https://doi.org/10.18154/RWTH-2025-03604'
 image = '/images/research/GA_Steinbeck2025.png'
 image_alt = 'Graphical abstract of my dissertation about tailoring hydrogels'
+paper_label = 'View Thesis'
 +++
 
-Lorem ipsum ... 
+Five years of research are now brought together in my PhD thesis. I focused on the high-throughput fabrication of complex-shaped hydrogels using automated projection lithography in stop-flow mode. By tailoring properties such as shape, porosity, thermal response, magnetism, and internal architecture, I built a versatile toolbox of adjustable properties that allows these hydrogels to be precisely adapted to different applications. 
