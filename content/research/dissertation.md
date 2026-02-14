@@ -14,5 +14,4 @@ image_alt = 'Graphical abstract of my dissertation about tailoring hydrogels'
 tags = ['hydrogels', 'porosity', 'thermal response', 'magnetic motion', 'complex-shaped', 'projection lithography']
 +++
 
-Lorem ipsum ... The main goal of this work was to tackle the reproducibility crisis in PEM electrolysis research. Many studies focus only on
-the catalyst or other subparts of the cell and do not report all the parameters that influence the performance. We created a database with more than 1,000 samples from 127 publications to get more insights into the influence of different parameters on the performance.
+Lorem ipsum ... 

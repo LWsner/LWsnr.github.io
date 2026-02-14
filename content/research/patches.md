@@ -12,5 +12,5 @@ image_alt = 'Graphical abstract of the patches publication'
 tags = ['hydrogels', 'patches', 'structure', 'porosity', 'biomaterial']
 +++
 
-With this work, I wanted to understand how microscale geometry can be used to precisely tune the mechanical and biological behavior of hydrogels. I developed hierarchically structured hydrogel patches with spatially defined crosslinking and porosity using a one-step stop-flow lithography process, and showed how pattern design directly controls compression behavior and cell spreading.
+... I developed hierarchically structured hydrogel patches with spatially defined crosslinking and porosity using a one-step stop-flow lithography process, and showed how pattern design directly controls compression behavior ...
 This has been my favorite research project so far, and I also wrote a blog post about it to share the journey of this research and explain the patches in a more accessible way. <!-- [blog post](https://lwsnr.github.io/blog/physics-foundation-model/) -->
