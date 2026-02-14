@@ -9,7 +9,6 @@ publication_year = 2024
 paper_url = 'https://doi.org/10.1002/smll.202404183'
 image = '/images/research/GA_Rauer2024.png'
 image_alt = 'Cell Adhesion and Harvesting Cycle'
-tags = ['hydrogels', 'biomaterial']
 +++
 
 ...

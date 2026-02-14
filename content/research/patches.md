@@ -9,7 +9,6 @@ publication_year = 2024
 paper_url = 'https://doi.org/10.1002/smll.202407311'
 image = '/images/research/GA_Steinbeck2024-Patches.png'
 image_alt = 'Graphical abstract of the patches publication'
-tags = ['hydrogels', 'patches', 'structure', 'porosity', 'biomaterial']
 +++
 
 ... I developed hierarchically structured hydrogel patches with spatially defined crosslinking and porosity using a one-step stop-flow lithography process, and showed how pattern design directly controls compression behavior ...

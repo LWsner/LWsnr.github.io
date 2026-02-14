@@ -9,7 +9,6 @@ publication_year = 2021
 paper_url = 'https://doi.org/10.1002/adhm.202100898'
 image = '/images/research/GA_Lüken2021.png'
 image_alt = 'Artifically Spun Fibers'
-tags = ['microfluidics', 'direct laser writing', 'wet spinning', 'biomaterial']
 +++
 
 ...

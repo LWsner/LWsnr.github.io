@@ -49,13 +49,6 @@
                     <a href="{{ .Params.paper_url }}" target="_blank" rel="noopener" class="btn btn-primary">View Paper</a>
                     {{ end }}
                 </div>
-                {{ if .Params.tags }}
-                <div class="research-tags">
-                    {{ range .Params.tags }}
-                    <span class="tag">{{ . }}</span>
-                    {{ end }}
-                </div>
-                {{ end }}
             </div>
         </article>
         {{ else }}

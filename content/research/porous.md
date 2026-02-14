@@ -9,7 +9,6 @@ publication_year = 2024
 paper_url = 'https://doi.org/10.1002/marc.202300680'
 image = '/images/research/GA_Steinbeck2024-Porous.png'
 image_alt = 'Tailored Microgels in Porosity and Thermal Response'
-tags = ['hydrogels', 'porosity', 'thermal response']
 +++
 
 ... 

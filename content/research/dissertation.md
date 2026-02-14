@@ -11,7 +11,6 @@ publication_year = 2025
 paper_url = 'https://doi.org/10.18154/RWTH-2025-03604'
 image = '/images/research/GA_Steinbeck2025.png'
 image_alt = 'Graphical abstract of my dissertation about tailoring hydrogels'
-tags = ['hydrogels', 'porosity', 'thermal response', 'magnetic motion', 'complex-shaped', 'projection lithography']
 +++
 
 Lorem ipsum ... 

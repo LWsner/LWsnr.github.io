@@ -9,7 +9,6 @@ publication_year = 2023
 paper_url = 'https://doi.org/10.1002/admt.202300044'
 image = '/images/research/GA_Steinbeck2023.png'
 image_alt = 'Magnetic Anisometric Microgels'
-tags = ['hydrogels', 'magentic motion']
 +++
 
 ...

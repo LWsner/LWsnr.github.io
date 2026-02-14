@@ -9,7 +9,6 @@ publication_year = 2020
 paper_url = 'https://doi.org/10.1016/j.bios.2020.112345'
 image = '/images/research/GA_Linz2020.jpg'
 image_alt = 'Transwell Cell Barrier Analysis'
-tags = ['cell barrier', 'TEER', 'electrical impedance spectroscopy']
 +++
 
 ...
