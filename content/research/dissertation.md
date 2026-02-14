@@ -1,0 +1,18 @@
++++
+title = 'Tailoring the Characteristics of Complex-Shaped Microgels'
+date = '2025-02-13'
+draft = false
+abstract = """Microgels are micrometer-sized polymer networks swollen in water or a similar solvent. They are used in various areas, such as water treatment, soft robotics, and tissue engineering. In order to fully exploit the potential of microgels, their properties need to be precisely adjusted in line with their application. In this regard, non-spherical microgels attract increasing interest as they extend the microgels’ properties through their anisometry. However, fabricating complex-shaped anisometric microgels is still more challenging than producing spherical ones and, therefore, much rarer. This thesis examines the fabrication of such complex-shaped microgels and the customization of selected microgel characteristics. The aim is to establish a fabrication platform with a repertoire of tailorable microgel characteristics that enables the combination and reliable regulation of the properties of a microgel.
+Stop-flow lithography (SFL) served as a fabrication method for complex-shaped microgels. This fabrication was modified in this thesis to tailor the characteristics of the microgels. The porous structure of the microgels was altered by using a cononsolvent in the reaction solution, which changed the polymer interactions during polymerization. This altered microgel structure influenced the thermal response of the poly(N-isopropyl acrylamide) (PNIPAM) microgels. These showed a significantly higher collapsing degree, modified collapsing and swelling kinetics, and inhomogeneous patterns during the swelling process. Adding ellipsoidal magnetic nanoparticles to the reaction solution resulted in magnetic microgels. By aligning the nanoparticles prior to polymerization, the microgels possessed a pre-defined magnetic moment, determining their alignment direction in a magnetic field. This alignment allowed the microgels to rotate in solution or rotate fixed in a microfluidic channel, actively mixing the surrounding solution. The limits of microgel fabrication via radical projection lithography have been exploited to create so-called patches with a novel technique. The patches are millimeter-sized hydrogels with highly crosslinked features connected to each other by a weaker crosslinked and flatter polymer network. The exact geometry, porosity, mechanical stability, and other properties of these patches can be adjusted.
+This work shows how porosity, thermal response, magnetic actuation, and architecture of complex-shaped microgels can be precisely tuned via SFL fabrication. Thus, microgel characteristics can be extended and better tailored, which enables customization for future applications of microgels, such as scaffolds for tissue engineering, which are one of their most promising applications."""
+authors = ['Lea Maria Steinbeck']
+publication = 'RWTH Aachen University'
+publication_year = 2025
+paper_url = 'https://doi.org/10.18154/RWTH-2025-03604'
+image = '/images/research/GA_Steinbeck2025.png'
+image_alt = 'Graphical abstract of my dissertation about tailoring hydrogels'
+tags = ['hydrogels', 'porosity', 'thermal response', 'magnetic motion', 'complex-shaped', 'projection lithography']
++++
+
+Lorem ipsum ... The main goal of this work was to tackle the reproducibility crisis in PEM electrolysis research. Many studies focus only on
+the catalyst or other subparts of the cell and do not report all the parameters that influence the performance. We created a database with more than 1,000 samples from 127 publications to get more insights into the influence of different parameters on the performance.

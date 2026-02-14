@@ -69,6 +69,8 @@ h6 {
     line-height: 1.2;
     margin-bottom: 1rem;
     font-weight: 600;
+    font-family: 'Eras Medium ITC', 'Era Medium', sans-serif;
+    color: #407FB7;
 }
 
 h1 {
@@ -220,7 +222,9 @@ a:hover {
 
 .hero-text h1 {
     font-size: 3rem;
+    font-weight: normal;
     margin-bottom: 1.5rem;
+    text-transform: uppercase;
 }
 
 .hero-image {
@@ -232,7 +236,7 @@ a:hover {
     height: 350px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid var(--accent-color);
+    border: 4px solid #407FB7;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
@@ -343,6 +347,10 @@ a:hover {
     padding: 2rem 0;
     border-bottom: 1px solid var(--border-color);
     margin-bottom: 2rem;
+}
+
+.section-header h1 {
+    text-transform: uppercase;
 }
 
 .section-description {

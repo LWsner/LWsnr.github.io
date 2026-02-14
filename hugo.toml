@@ -7,10 +7,9 @@ theme = 'custom'
   author = 'Lea Maria Wiesner'
   description = 'Personal website of Lea Maria Wiesner'
   profileImage = '/images/profile.jpg'
-  github = 'https://github.com/LWsnr'
-  linkedin = 'https://www.linkedin.com/in/florian-wiesner-profile/'
-  googlescholar = 'https://scholar.google.com/citations?user=rvqCcpgAAAAJ&hl=en'
-  x = 'https://x.com/f_wiesner'
+  github = 'https://github.com/LWsner'
+  linkedin = 'https://www.linkedin.com/in/lea-m-wiesner/'
+  googlescholar = 'https://scholar.google.de/citations?user=TwQKiLoAAAAJ&hl=de&oi=ao'
 
 [markup]
   [markup.goldmark]
