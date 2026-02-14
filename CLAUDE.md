@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Hugo-based personal website for Florian Wiesner built with a custom theme. The site serves as a portfolio showcasing research, projects, blog posts, hobbies, and news updates.
+This is a Hugo-based personal website for Lea Maria Wiesner built with a custom theme. The site serves as a portfolio showcasing research, blog posts, hobbies, and news updates.
 
 ## Development Commands
 
@@ -31,7 +31,6 @@ hugo
 # Create new content using archetypes
 hugo new blog/post-title.md
 hugo new research/paper-title.md
-hugo new projects/project-name.md
 hugo new news/announcement.md
 hugo new hobbies/hobby-name.md
 ```
@@ -39,7 +38,7 @@ hugo new hobbies/hobby-name.md
 ## Architecture
 
 ### Directory Structure
-- `content/` - Markdown content organized by section (blog, research, projects, hobbies, news)
+- `content/` - Markdown content organized by section (blog, research, hobbies, news)
 - `themes/custom/` - Custom Hugo theme with layouts and static assets
   - `layouts/` - HTML templates for different content types
   - `static/` - CSS, images, and other static files
@@ -50,7 +49,6 @@ hugo new hobbies/hobby-name.md
 ### Content Types
 Each content section has its own archetype with specific front matter:
 - **Research**: Academic papers with abstracts, authors, publication details
-- **Projects**: Technical projects with tech stack, URLs, screenshots
 - **Blog**: Standard blog posts with tags and categories
 - **News**: Brief announcements and updates
 - **Hobbies**: Personal interests and activities

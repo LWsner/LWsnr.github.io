@@ -9,7 +9,7 @@ custom_css: ["physics-blog.css"]
 ---
 
 <div class="authors">
-Florian Wiesner, Matthias Wessling, Stephen Baek
+Lea Maria Wiesner, Matthias Wessling, Stephen Baek
 </div>
 
 <div class="gif-grid-3x3-nospace">

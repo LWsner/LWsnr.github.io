@@ -1,13 +1,13 @@
 baseURL = 'https://flowsnr.github.io'
 languageCode = 'en-us'
-title = 'Florian Wiesner'
+title = 'Lea Wiesner'
 theme = 'custom'
 
 [params]
-  author = 'Florian Wiesner'
-  description = 'Personal website of Florian Wiesner'
+  author = 'Lea Maria Wiesner'
+  description = 'Personal website of Lea Maria Wiesner'
   profileImage = '/images/profile.jpg'
-  github = 'https://github.com/FloWsnr'
+  github = 'https://github.com/LWsnr'
   linkedin = 'https://www.linkedin.com/in/florian-wiesner-profile/'
   googlescholar = 'https://scholar.google.com/citations?user=rvqCcpgAAAAJ&hl=en'
   x = 'https://x.com/f_wiesner'
@@ -31,11 +31,6 @@ theme = 'custom'
   name = 'Research'
   url = '/research/'
   weight = 3
-
-[[menu.main]]
-  name = 'Projects'
-  url = '/projects/'
-  weight = 4
 
 [[menu.main]]
   name = 'Hobbies'
