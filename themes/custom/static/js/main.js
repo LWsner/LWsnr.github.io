@@ -51,6 +51,8 @@ class ImageModal {
         this.modalImg = document.getElementById('modalImage');
         this.modalCaption = document.getElementById('modalCaption');
         this.closeBtn = this.modal?.querySelector('.close');
+        this.gallery = [];
+        this.currentIndex = 0;
 
         this.init();
     }
@@ -75,32 +77,81 @@ class ImageModal {
             });
         }
 
-        // Close modal with Escape key
+        // Keyboard navigation
         document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && this.modal?.style.display === 'block') {
-                this.closeModal();
-            }
+            if (this.modal?.style.display !== 'block') return;
+            if (e.key === 'Escape') this.closeModal();
+            if (e.key === 'ArrowRight' && this.gallery.length > 1) this.navigate(1);
+            if (e.key === 'ArrowLeft' && this.gallery.length > 1) this.navigate(-1);
         });
+
+        // Create nav buttons
+        this.createNavButtons();
+    }
+
+    createNavButtons() {
+        if (!this.modal) return;
+        const content = this.modal.querySelector('.modal-content');
+        if (!content) return;
+
+        this.prevBtn = document.createElement('button');
+        this.prevBtn.className = 'modal-nav modal-prev';
+        this.prevBtn.innerHTML = '&#10094;';
+        this.prevBtn.addEventListener('click', (e) => { e.stopPropagation(); this.navigate(-1); });
+
+        this.nextBtn = document.createElement('button');
+        this.nextBtn.className = 'modal-nav modal-next';
+        this.nextBtn.innerHTML = '&#10095;';
+        this.nextBtn.addEventListener('click', (e) => { e.stopPropagation(); this.navigate(1); });
+
+        content.appendChild(this.prevBtn);
+        content.appendChild(this.nextBtn);
     }
 
     openModal(img) {
-        if (this.modal && this.modalImg && this.modalCaption) {
-            this.modal.style.display = 'block';
+        if (!this.modal || !this.modalImg || !this.modalCaption) return;
+
+        // Check if clicked image is part of a slideshow
+        const slideshow = img.closest('.image-slideshow');
+        if (slideshow) {
+            this.gallery = Array.from(slideshow.querySelectorAll('.slideshow-image'));
+            this.currentIndex = this.gallery.indexOf(img);
+            if (this.currentIndex === -1) this.currentIndex = 0;
+        } else {
+            this.gallery = [img];
+            this.currentIndex = 0;
+        }
+
+        this.showImage();
+        this.modal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+
+        // Show/hide nav buttons
+        const showNav = this.gallery.length > 1;
+        if (this.prevBtn) this.prevBtn.style.display = showNav ? 'block' : 'none';
+        if (this.nextBtn) this.nextBtn.style.display = showNav ? 'block' : 'none';
+    }
+
+    showImage() {
+        const img = this.gallery[this.currentIndex];
+        if (img && this.modalImg && this.modalCaption) {
             this.modalImg.src = img.src;
             this.modalImg.alt = img.alt;
             this.modalCaption.textContent = img.alt || img.title || '';
-
-            // Prevent body scrolling
-            document.body.style.overflow = 'hidden';
         }
+    }
+
+    navigate(direction) {
+        if (this.gallery.length <= 1) return;
+        this.currentIndex = (this.currentIndex + direction + this.gallery.length) % this.gallery.length;
+        this.showImage();
     }
 
     closeModal() {
         if (this.modal) {
             this.modal.style.display = 'none';
-
-            // Re-enable body scrolling
             document.body.style.overflow = 'auto';
+            this.gallery = [];
         }
     }
 }

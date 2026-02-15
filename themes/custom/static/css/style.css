@@ -1112,6 +1112,35 @@ a:hover {
     padding: 10px 0;
 }
 
+/* Modal Navigation */
+.modal-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    transition: background 0.3s ease;
+    z-index: 1001;
+    line-height: 1;
+}
+
+.modal-nav:hover {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.modal-prev {
+    left: -4rem;
+}
+
+.modal-next {
+    right: -4rem;
+}
+
 /* Clickable Images */
 .clickable-image {
     cursor: pointer;
