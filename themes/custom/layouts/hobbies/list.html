@@ -13,7 +13,15 @@
         {{ range $index, $hobby := .Pages }}
         {{ $isEven := eq (mod $index 2) 0 }}
         <article class="hobby-item {{ if $isEven }}image-left{{ else }}image-right{{ end }}">
-            {{ if .Params.image }}
+            {{ if .Params.slideshow }}
+            <div class="hobby-image">
+                <div class="image-slideshow" style="--slide-count: {{ len .Params.slideshow }};">
+                    {{ range $i, $img := .Params.slideshow }}
+                    <img src="{{ $img }}" alt="{{ $.Params.image_alt | default $.Title }}" class="slideshow-image clickable-image" style="animation-delay: {{ mul $i 3 }}s;">
+                    {{ end }}
+                </div>
+            </div>
+            {{ else if .Params.image }}
             <div class="hobby-image">
                 {{ if strings.HasSuffix .Params.image ".mp4" }}
                 <video controls class="clickable-image">
