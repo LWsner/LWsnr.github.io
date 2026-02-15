@@ -822,7 +822,7 @@ a:hover {
 
 .hobby-item {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 300px 1fr;
     gap: 2rem;
     align-items: center;
     padding: 2rem;
@@ -833,11 +833,23 @@ a:hover {
 }
 
 .hobby-item.image-right {
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 300px;
 }
 
 .hobby-item.image-right .hobby-image {
     order: 2;
+}
+
+.hobby-image {
+    display: flex;
+}
+
+.hobby-item.image-left .hobby-image {
+    justify-content: flex-start;
+}
+
+.hobby-item.image-right .hobby-image {
+    justify-content: flex-end;
 }
 
 .hobby-item.image-right .hobby-content {

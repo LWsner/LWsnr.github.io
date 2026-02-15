@@ -1,6 +1,6 @@
 +++
-title = 'Sport Activies'
-date = '2025-01-01'
+title = 'Sports'
+date = '2026-01-03'
 draft = false
 slideshow = ['/images/hobbies/Acrobatic.jpg', '/images/hobbies/Beachvolleyball.PNG', '/images/hobbies/Pickleball.jpg']
 image_alt = 'Sports I enjoy'
