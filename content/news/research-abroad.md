@@ -2,7 +2,7 @@
 title = 'Research Abroad'
 date = '2025-03-03'
 draft = false
-summary = 'Starting four months of research as a postdoc at the University of Virginia (UVA) in Charlottesville, Virgina, USA.'
+#summary = 'Starting four months of research as a postdoc at the University of Virginia (UVA) in Charlottesville, Virgina, USA.'
 featured = false
 +++
 

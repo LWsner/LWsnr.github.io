@@ -2,7 +2,7 @@
 title = 'From Steinbeck to Wiesner'
 date = '2025-09-05'
 draft = false
-summary = 'Just married and changed my name!'
+#summary = 'Just married and changed my name!'
 featured = false
 +++
 

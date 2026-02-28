@@ -2,7 +2,7 @@
 title = 'Conference Talk on my Microgel Research'
 date = '2024-04-02'
 draft = false
-summary = 'I gave a talk on my research from the past few years at the international [Microgels 2024](https://microgels2024.rwth-aachen.de/) conference.'
+#summary = 'I gave a talk on my research from the past few years at the international [Microgels 2024](https://microgels2024.rwth-aachen.de/) conference.'
 featured = true
 +++
 

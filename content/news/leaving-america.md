@@ -2,7 +2,7 @@
 title = 'Leaving America'
 date = '2025-07-07'
 draft = false
-summary = 'Heading back to Germany after an exciting time as a postdoc at the University of Virginia (UVA) in Charlottesville, Virgina, USA.'
+#summary = 'Heading back to Germany after an exciting time as a postdoc at the University of Virginia (UVA) in Charlottesville, Virgina, USA.'
 featured = false
 +++
 

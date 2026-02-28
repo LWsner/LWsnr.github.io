@@ -2,7 +2,7 @@
 title = 'Started PhD'
 date = '2020-06-15'
 draft = false
-summary = 'I just started my PhD journey in Chemical Process Engineering at RWTH Aachen University.'
+#summary = 'I just started my PhD journey in Chemical Process Engineering at RWTH Aachen University.'
 featured = true
 +++
 

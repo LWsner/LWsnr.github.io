@@ -2,7 +2,7 @@
 title = 'First First-Author Publication'
 date = '2023-04-04'
 draft = false
-summary = 'I published my first first-author [paper](https://doi.org/10.1002/admt.202300044) on magnetically actuable microgels.'
+#summary = 'I published my first first-author [paper](https://doi.org/10.1002/admt.202300044) on magnetically actuable microgels.'
 featured = true
 +++
 
