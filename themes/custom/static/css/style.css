@@ -706,12 +706,22 @@ a:hover {
 .about-qualifications-list {
     max-width: 800px;
     margin: 0 auto 2rem;
+    padding-left: 2rem;
     display: flex;
     justify-content: space-between;
 }
 
 .about-qualification-row {
     flex: 1;
+    border-right: 2px solid var(--border-color);
+    padding-right: 1rem;
+    margin-right: 1rem;
+}
+
+.about-qualification-row:last-child {
+    border-right: none;
+    padding-right: 0;
+    margin-right: 0;
 }
 
 .about-qualification-row strong {
@@ -723,13 +733,13 @@ a:hover {
 }
 
 .about-qualification-values span {
-    display: flex;
+    display: block;
+    padding-left: 0.75rem;
+    text-indent: -0.75rem;
 }
 
 .about-qualification-values span::before {
-    content: "•";
-    margin-right: 0.5em;
-    flex-shrink: 0;
+    content: none;
 }
 
 /* About Timeline Styles */
