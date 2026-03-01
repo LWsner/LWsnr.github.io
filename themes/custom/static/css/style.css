@@ -706,16 +706,30 @@ a:hover {
 .about-qualifications-list {
     max-width: 800px;
     margin: 0 auto 2rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 .about-qualification-row {
-    padding: 0.5rem 0;
+    flex: 1;
 }
 
 .about-qualification-row strong {
+    display: block;
     font-family: 'Eras Medium ITC', 'Era Medium', sans-serif;
     font-size: 1.25rem;
     color: var(--heading-color);
+    margin-bottom: 0.25rem;
+}
+
+.about-qualification-values span {
+    display: flex;
+}
+
+.about-qualification-values span::before {
+    content: "•";
+    margin-right: 0.5em;
+    flex-shrink: 0;
 }
 
 /* About Timeline Styles */
