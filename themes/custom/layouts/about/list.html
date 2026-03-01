@@ -11,13 +11,7 @@
     </div>
     {{ end }}
 
-    {{ if .Params.qualifications }}
-    <div class="about-qualifications">
-        {{ range .Params.qualifications }}
-        <span class="about-qualification-item"><strong>{{ .label }}:</strong> {{ .value }}</span>
-        {{ end }}
-    </div>
-    {{ end }}
+    <h2 class="about-section-heading">SKILLS</h2>
 
     <h2 class="about-section-heading">PROFESSIONAL EXPERIENCE</h2>
     <div class="about-list">
@@ -71,6 +65,13 @@
             </div>
         </article>
         {{ end }}
+    </div>
+
+    <h2 class="about-section-heading">ADDITIONAL QUALIFICATIONS</h2>
+    <div class="about-qualifications-list">
+        <div class="about-qualification-row"><strong>Certifications:</strong> GMP Specialist, Six Sigma Green Belt</div>
+        <div class="about-qualification-row"><strong>Trainings:</strong> Communication & Team Development, Leadership</div>
+        <div class="about-qualification-row"><strong>Engagement:</strong> TANDEMdok mentoring programme, iGEM research competition</div>
     </div>
 </div>
 {{ end }}

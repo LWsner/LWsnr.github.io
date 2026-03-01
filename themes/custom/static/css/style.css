@@ -703,6 +703,21 @@ a:hover {
     color: var(--accent-color);
 }
 
+.about-qualifications-list {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+.about-qualification-row {
+    padding: 0.5rem 0;
+}
+
+.about-qualification-row strong {
+    font-family: 'Eras Medium ITC', 'Era Medium', sans-serif;
+    font-size: 1.25rem;
+    color: var(--heading-color);
+}
+
 /* About Timeline Styles */
 .about-list {
     position: relative;

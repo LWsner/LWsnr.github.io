@@ -19,4 +19,4 @@ label = "Languages"
 value = "German (native), English (fluent, C1)"
 +++
 
-Scientist and project lead combining structured project coordination, people leadership, clear communication, and strong quality awareness. Experienced in establishing SOP and documentation standards, running day-to-day lab operations, and managing budgets, resources, and stakeholders in international environments.
+Scientist and project lead combining structured project coordination, people leadership, clear communication, and strong quality awareness. Experienced in establishing SOP and documentation standards, running day-to-day lab operations, and managing budgets, resources, and stakeholders in international environments. Ready to bring this skill set into quality and process-focused roles in biotech or pharma.
