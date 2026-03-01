@@ -698,9 +698,7 @@ a:hover {
 .about-section-heading {
     max-width: 800px;
     margin: 2rem auto 1rem;
-    font-size: 1.4rem;
     font-weight: 600;
-    letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--accent-color);
 }
