@@ -2,17 +2,27 @@
 <div class="container">
     <header class="section-header">
         <h1>{{ .Title }}</h1>
-        {{ if .Content }}
-        <div class="section-description">
-            {{ .Content }}
-        </div>
-        {{ end }}
-        <a href="/files/cv-de.pdf" class="btn btn-primary" download>Download CV</a>
+        <a href="/files/cv-en.pdf" class="btn btn-primary" download>Download CV</a>
     </header>
 
+    {{ if .Content }}
+    <div class="about-summary-box">
+        {{ .Content }}
+    </div>
+    {{ end }}
+
+    {{ if .Params.qualifications }}
+    <div class="about-qualifications">
+        {{ range .Params.qualifications }}
+        <span class="about-qualification-item"><strong>{{ .label }}:</strong> {{ .value }}</span>
+        {{ end }}
+    </div>
+    {{ end }}
+
+    <h2 class="about-section-heading">PROFESSIONAL EXPERIENCE</h2>
     <div class="about-list">
-        {{ range sort .Pages ".Params.start_date" "desc" }}
-        <article class="about-item {{ .Params.type_label | default "career" }}">
+        {{ range sort (where .Pages ".Params.type_label" "career") ".Params.start_date" "desc" }}
+        <article class="about-item career">
             <div class="about-marker">
                 <span class="about-dot"></span>
             </div>
@@ -20,9 +30,6 @@
                 <div class="about-date-badge">
                     {{ .Params.start_date }}{{ if .Params.end_date }} – {{ .Params.end_date }}{{ else }} – present{{ end }}
                 </div>
-                <span class="about-type-tag {{ .Params.type_label | default "career" }}">
-                    {{ .Params.type_label | default "career" }}
-                </span>
                 <h2 class="about-position">{{ .Params.position | default .Title }}</h2>
                 <h3 class="about-organization">{{ .Params.organization }}</h3>
                 {{ if .Params.location }}
@@ -36,8 +43,33 @@
                 {{ end }}
             </div>
         </article>
-        {{ else }}
-        <p class="no-content">No entries yet.</p>
+        {{ end }}
+    </div>
+
+    <h2 class="about-section-heading">EDUCATION</h2>
+    <div class="about-list">
+        {{ range sort (where .Pages ".Params.type_label" "education") ".Params.start_date" "desc" }}
+        <article class="about-item education">
+            <div class="about-marker">
+                <span class="about-dot"></span>
+            </div>
+            <div class="about-card">
+                <div class="about-date-badge">
+                    {{ .Params.start_date }}{{ if .Params.end_date }} – {{ .Params.end_date }}{{ else }} – present{{ end }}
+                </div>
+                <h2 class="about-position">{{ .Params.position | default .Title }}</h2>
+                <h3 class="about-organization">{{ .Params.organization }}</h3>
+                {{ if .Params.location }}
+                <div class="about-location">{{ .Params.location }}</div>
+                {{ end }}
+                {{ if .Params.description }}
+                <p class="about-description">{{ .Params.description }}</p>
+                {{ end }}
+                {{ if .Content }}
+                <div class="about-content">{{ .Content }}</div>
+                {{ end }}
+            </div>
+        </article>
         {{ end }}
     </div>
 </div>

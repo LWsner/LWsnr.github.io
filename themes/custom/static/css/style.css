@@ -653,6 +653,56 @@ a:hover {
     font-weight: 500;
 }
 
+/* About Summary Box */
+.about-summary-box {
+    max-width: 800px;
+    margin: 1.5rem auto 2rem;
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 0.5rem;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 2px 4px var(--shadow-color);
+    text-align: left;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.about-summary-box p:first-child {
+    margin-top: 0;
+}
+
+.about-summary-box p:last-child {
+    margin-bottom: 0;
+}
+
+.about-qualifications {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    text-align: center;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    opacity: 0.85;
+}
+
+.about-qualification-item {
+    display: inline;
+}
+
+.about-qualification-item + .about-qualification-item::before {
+    content: " | ";
+    opacity: 0.5;
+}
+
+.about-section-heading {
+    max-width: 800px;
+    margin: 2rem auto 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+}
+
 /* About Timeline Styles */
 .about-list {
     position: relative;
