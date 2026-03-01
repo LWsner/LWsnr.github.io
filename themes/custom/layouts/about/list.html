@@ -2,7 +2,6 @@
 <div class="container">
     <header class="section-header">
         <h1>{{ .Title }}</h1>
-        <a href="/files/cv-en.pdf" class="btn btn-primary" download>Download CV</a>
     </header>
 
     {{ if .Content }}
@@ -135,6 +134,26 @@
                 <span>iGEM research competition</span>
             </div>
         </div>
+    </div>
+
+    <h2 class="about-section-heading">LANGUAGES</h2>
+    <div class="about-qualifications-list">
+        <div class="about-qualification-row">
+            <strong>English</strong>
+            <div class="about-qualification-values">
+                <span>Fluent (C1)</span>
+            </div>
+        </div>
+        <div class="about-qualification-row">
+            <strong>German</strong>
+            <div class="about-qualification-values">
+                <span>Native</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-cv-download">
+        <a href="/files/cv-en.pdf" class="btn btn-primary" download>Download CV</a>
     </div>
 </div>
 {{ end }}

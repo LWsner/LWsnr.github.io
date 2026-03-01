@@ -695,6 +695,11 @@ a:hover {
     opacity: 0.5;
 }
 
+.about-cv-download {
+    text-align: center;
+    margin: 3rem 0 2rem;
+}
+
 .about-section-heading {
     max-width: 800px;
     margin: 2rem auto 1rem;
@@ -702,6 +707,7 @@ a:hover {
     text-transform: uppercase;
     color: var(--accent-color);
 }
+
 
 .about-qualifications-list {
     max-width: 800px;
