@@ -2,7 +2,7 @@
 title = 'Ph.D. (Dr.-Ing.), summa cum laude'
 date = '2025-04-01'
 draft = false
-position = 'Ph.D. (Dr.-Ing.), summa cum laude'
+position = 'Ph.D. (Dr.-Ing.)<em>, summa cum laude</em>'
 organization = 'RWTH Aachen University'
 location = 'Aachen, Germany'
 start_date = '2020-06'

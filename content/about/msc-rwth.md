@@ -2,7 +2,7 @@
 title = 'Master of Science, Grade: 1.3 with distinction'
 date = '2020-03-01'
 draft = false
-position = 'Master of Science, Grade: 1.3 with distinction'
+position = 'Master of Science<em>, Grade: 1.3 with distinction</em>'
 organization = 'RWTH Aachen University'
 location = 'Aachen, Germany'
 start_date = '2018-04'

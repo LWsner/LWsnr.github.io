@@ -749,8 +749,8 @@ a:hover {
 }
 
 .about-item.education .about-dot {
-    background-color: #48bb78;
-    box-shadow: 0 0 0 2px #48bb78;
+    background-color: var(--accent-color);
+    box-shadow: 0 0 0 2px var(--accent-color);
 }
 
 .about-card {
@@ -770,7 +770,7 @@ a:hover {
 }
 
 .about-item.education .about-date-badge {
-    color: #48bb78;
+    color: var(--accent-color);
 }
 
 .about-type-tag {
@@ -790,7 +790,7 @@ a:hover {
 }
 
 .about-type-tag.education {
-    background-color: #48bb78;
+    background-color: var(--accent-color);
     color: white;
 }
 
@@ -798,6 +798,11 @@ a:hover {
     font-size: 1.25rem;
     margin-bottom: 0.25rem;
     margin-top: 0.5rem;
+}
+
+.about-position em {
+    font-style: normal;
+    font-weight: normal;
 }
 
 .about-organization {

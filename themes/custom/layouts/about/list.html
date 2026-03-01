@@ -57,7 +57,7 @@
                 <div class="about-date-badge">
                     {{ .Params.start_date }}{{ if .Params.end_date }} – {{ .Params.end_date }}{{ else }} – present{{ end }}
                 </div>
-                <h2 class="about-position">{{ .Params.position | default .Title }}</h2>
+                <h2 class="about-position">{{ .Params.position | default .Title | safeHTML }}</h2>
                 <h3 class="about-organization">{{ .Params.organization }}</h3>
                 {{ if .Params.location }}
                 <div class="about-location">{{ .Params.location }}</div>
