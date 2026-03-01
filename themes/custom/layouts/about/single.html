@@ -13,7 +13,7 @@
                 </div>
                 {{ end }}
                 <div class="about-dates">
-                    <strong>Period:</strong> {{ .Params.start_date }}{{ if .Params.end_date }} – {{ .Params.end_date }}{{ else }} – present{{ end }}
+                    <strong>Period:</strong> {{ replace .Params.start_date "-" "/" }}{{ if .Params.end_date }} – {{ replace .Params.end_date "-" "/" }}{{ else }} – present{{ end }}
                 </div>
                 <div class="about-type">
                     <span class="about-type-tag {{ .Params.type_label | default "career" }}">

@@ -66,10 +66,10 @@
             </div>
             <div class="about-card">
                 <div class="about-date-badge">
-                    {{ .Params.start_date }}{{ if .Params.end_date }} – {{ .Params.end_date }}{{ else }} – present{{ end }}
+                    {{ replace .Params.start_date "-" "/" }}{{ if .Params.end_date }} – {{ replace .Params.end_date "-" "/" }}{{ else }} – present{{ end }}
                 </div>
                 <h2 class="about-position">{{ .Params.position | default .Title }}</h2>
-                <h3 class="about-organization">{{ .Params.organization }}</h3>
+                <h3 class="about-organization">{{ .Params.organization | markdownify }}</h3>
                 {{ if .Params.location }}
                 <div class="about-location">{{ .Params.location }}</div>
                 {{ end }}
@@ -93,10 +93,10 @@
             </div>
             <div class="about-card">
                 <div class="about-date-badge">
-                    {{ .Params.start_date }}{{ if .Params.end_date }} – {{ .Params.end_date }}{{ else }} – present{{ end }}
+                    {{ replace .Params.start_date "-" "/" }}{{ if .Params.end_date }} – {{ replace .Params.end_date "-" "/" }}{{ else }} – present{{ end }}
                 </div>
                 <h2 class="about-position">{{ .Params.position | default .Title | safeHTML }}</h2>
-                <h3 class="about-organization">{{ .Params.organization }}</h3>
+                <h3 class="about-organization">{{ .Params.organization | markdownify }}</h3>
                 {{ if .Params.location }}
                 <div class="about-location">{{ .Params.location }}</div>
                 {{ end }}
@@ -130,8 +130,8 @@
         <div class="about-qualification-row">
             <strong>Engagement</strong>
             <div class="about-qualification-values">
-                <span>TANDEMdok mentoring programme</span>
-                <span>iGEM research competition</span>
+                <span><a href="https://www.igad.rwth-aachen.de/cms/igad/tandem-mentoring/tandem-mentoring/~fwgz/t/?lidx=1">TANDEMdok</a> mentoring programme</span>
+                <span><a href="https://2016.igem.org/Team:Aachen">iGEM</a> research competition</span>
             </div>
         </div>
     </div>

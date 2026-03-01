@@ -11,7 +11,7 @@ type_label = 'education'
 description = 'in Chemical Process Engineering'
 +++
 
-Dissertation: *Tailoring the Characteristics of Complex-Shaped Microgels*
+Dissertation: [*Tailoring the Characteristics of Complex-Shaped Microgels*](https://publications.rwth-aachen.de/record/1009669?ln=en)
 
 - Developed microfluidic fabrication methods for novel hydrogels
 - Established structured workflows, documentation, and SOP standards
